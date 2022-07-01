@@ -1,0 +1,57 @@
+body {
+	background-color: aliceblue;
+	color: rgb(85, 35, 35);
+	background-image: url(/public/pics/world.jpg);
+	height: 100%;
+	width: 100%;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+.visible {
+	visibility: visible;
+}
+.hidden {
+	visibility: hidden;
+}
+.navBar li {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+th {
+	text-align: center;
+	color: rgb(253, 66, 66);
+	border-bottom: 1px solid white;
+	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+td {
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+
+svg {
+	transform: scale(0.7);
+}
+a {
+	color: white;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	#grid,
+	.grid {
+		width: 1000px;
+	}
+}
