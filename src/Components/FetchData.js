@@ -40,6 +40,7 @@ const FetchData = ({ codeValue }) => {
 			options
 		)
 			.then((response) => {
+			//some country codes are old/not recognized by the API endpoint, so I added this error alert
 				if (response.status === 404) {
 					alert(
 						"PLEASE ENTER A VALID COUNTRY CODE!! - It may be that the selected country code is now defunct"
