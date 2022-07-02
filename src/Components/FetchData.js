@@ -30,7 +30,7 @@ const FetchData = ({ codeValue }) => {
 		const options = {
 			method: "GET",
 			headers: {
-				"X-RapidAPI-Key": "50ec1d7ee6msh459fcfbf83f7285p1812ccjsnc4cb67da2855",
+				"X-RapidAPI-Key": key goes here,
 				"X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
 			},
 		};
@@ -86,6 +86,7 @@ const FetchData = ({ codeValue }) => {
 	//the user enters a country code, and from the 'Name' value extracted from the data, a second fetch is called.
 	const countryDataFetchFunction = (name) => {
 		let nameValue = name;
+		//API endpoint doesn't recognize 'of America', so is removed from string
 		if (nameValue === "United States of America") {
 			nameValue = "United States";
 		}
@@ -93,7 +94,7 @@ const FetchData = ({ codeValue }) => {
 		const options = {
 			method: "GET",
 			headers: {
-				"X-RapidAPI-Key": "50ec1d7ee6msh459fcfbf83f7285p1812ccjsnc4cb67da2855",
+				"X-RapidAPI-Key": key goes here,
 				"X-RapidAPI-Host": "countries-cities.p.rapidapi.com",
 			},
 		};
