@@ -27,7 +27,7 @@ const Codes = () => {
 	const options = {
 		method: "GET",
 		headers: {
-			"X-RapidAPI-Key": "50ec1d7ee6msh459fcfbf83f7285p1812ccjsnc4cb67da2855",
+			"X-RapidAPI-Key": key goes here,
 			"X-RapidAPI-Host": "countries-cities.p.rapidapi.com",
 		},
 	};
