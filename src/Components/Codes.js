@@ -16,9 +16,11 @@ const ListWrapper = styled.div`
 `;
 
 const Codes = () => {
+	//declare state variables to store country codes 
 	const [keys, setKeys] = useState([]);
 	const [values, setValues] = useState([]);
-
+	
+	//function that assigns fetched data to state variables
 	const myFunction = (keys, values) => {
 		setKeys(keys);
 		setValues(values);
@@ -39,16 +41,16 @@ const Codes = () => {
 		.then((response) => response.json())
 		.then((response) => {
 			const data = response;
-			const countries = data["countries"];
-			const keys = Object.keys(countries).sort();
-			const values = Object.values(countries).sort();
-			myFunction(keys, values);
+			const countries = data["countries"];//extract data from response (object format)
+			const keys = Object.keys(countries).sort();//sort alphabetically
+			const values = Object.values(countries).sort();//sort alphabetically 
+			myFunction(keys, values);//send to function to store data in state variables 
 		})
 		.catch((err) => console.error(err));
 	return (
 		<>
 			<CodeList>Codes</CodeList>
-			<ListWrapper>
+			<ListWrapper>//render all country codes 
 				<ul className="keysList">
 					{keys.map((element) => (
 						<CodeText>{element}</CodeText>
