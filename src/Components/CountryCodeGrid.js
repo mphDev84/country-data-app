@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const GridContainer = styled.div`
 	display: grid;
 	gap: 5px 10px;
-	grid-template-columns: repeat(27, 1fr);
+	grid-template-columns: repeat(auto-fill, 36px);
 	grid-template-rows: repeat(5, 1fr);
 	background-color: rgb(33, 150, 243, 0.6);
 	padding: 10px;
